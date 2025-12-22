@@ -1,19 +1,58 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import Icon from '@/components/ui/icon';
 import { Badge } from '@/components/ui/badge';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 
 const Index = () => {
   const [formData, setFormData] = useState({ name: '', phone: '', message: '' });
+  const [timeLeft, setTimeLeft] = useState({ days: 2, hours: 14, minutes: 30, seconds: 0 });
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(prev => {
+        if (prev.seconds > 0) return { ...prev, seconds: prev.seconds - 1 };
+        if (prev.minutes > 0) return { ...prev, minutes: prev.minutes - 1, seconds: 59 };
+        if (prev.hours > 0) return { ...prev, hours: prev.hours - 1, minutes: 59, seconds: 59 };
+        if (prev.days > 0) return { ...prev, days: prev.days - 1, hours: 23, minutes: 59, seconds: 59 };
+        return prev;
+      });
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     alert('Спасибо за заявку! Скоро свяжемся с вами.');
     setFormData({ name: '', phone: '', message: '' });
   };
+
+  const testimonials = [
+    {
+      name: 'Алексей Соколов',
+      role: 'Монетчик-новичок',
+      text: 'За 2 месяца совершил 8 сделок. Первая маржа была 12%, последняя уже 28%. Виталий научил смотреть на лот глазами покупателя — это изменило всё.',
+      rating: 5,
+      result: '+47 000 ₽ за 60 дней'
+    },
+    {
+      name: 'Мария Кравцова',
+      role: 'Коллекционер открыток',
+      text: 'Программа структурировала хаос в голове. Теперь я знаю, где искать, как оценивать и кому продавать. Первые 5 лотов ушли за неделю!',
+      rating: 5,
+      result: '5 продаж за 7 дней'
+    },
+    {
+      name: 'Дмитрий Петров',
+      role: 'Антиквар-стажёр',
+      text: 'Чек-листы подлинности спасли от покупки двух подделок. Окупил курс с третьей сделки. Поддержка в чате бесценна — отвечают за час.',
+      rating: 5,
+      result: 'Окупил курс за 3 недели'
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-foreground overflow-x-hidden">
@@ -304,8 +343,53 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Author */}
+      {/* Testimonials */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-card/30">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Отзывы учеников</h2>
+            <div className="w-24 h-1 bg-gold mx-auto mb-4"></div>
+            <p className="text-xl text-muted-foreground">Реальные результаты наших выпускников</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="bg-card border-border hover:border-gold transition-all duration-300">
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-4 mb-4">
+                    <Avatar className="w-12 h-12 border-2 border-gold">
+                      <AvatarFallback className="bg-gold/20 text-gold font-bold">
+                        {testimonial.name.split(' ').map(n => n[0]).join('')}
+                      </AvatarFallback>
+                    </Avatar>
+                    <div className="flex-1">
+                      <h4 className="font-semibold text-white">{testimonial.name}</h4>
+                      <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-1 mb-3">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Icon key={i} name="Star" className="text-gold fill-gold" size={16} />
+                    ))}
+                  </div>
+
+                  <p className="text-muted-foreground mb-4 leading-relaxed">{testimonial.text}</p>
+
+                  <div className="pt-4 border-t border-border">
+                    <Badge className="bg-gold/20 text-gold border-gold">
+                      {testimonial.result}
+                    </Badge>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Author */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Кто я?</h2>
@@ -405,9 +489,14 @@ const Index = () => {
       {/* Pricing */}
       <section id="packages" className="py-16 px-4 sm:px-6 lg:px-8 bg-card/30">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
+            <Badge className="bg-destructive/20 text-destructive border-destructive px-6 py-2 text-sm font-semibold mb-4 inline-flex items-center gap-2">
+              <Icon name="Clock" size={16} />
+              ОСТАЛОСЬ {timeLeft.days}д {String(timeLeft.hours).padStart(2, '0')}:{String(timeLeft.minutes).padStart(2, '0')}:{String(timeLeft.seconds).padStart(2, '0')}
+            </Badge>
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Пакеты и цены</h2>
-            <div className="w-24 h-1 bg-gold mx-auto"></div>
+            <div className="w-24 h-1 bg-gold mx-auto mb-4"></div>
+            <p className="text-xl text-gold-light font-semibold">Осталось только 3 места по специальной цене</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -468,6 +557,27 @@ const Index = () => {
               </CardContent>
             </Card>
           </div>
+
+          <Card className="mt-12 bg-gradient-to-r from-gold/10 to-transparent border-gold">
+            <CardContent className="p-8">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div className="flex items-center gap-4">
+                  <Icon name="ShieldCheck" className="text-gold" size={48} />
+                  <div>
+                    <h3 className="text-2xl font-bold text-gold-light mb-1">Гарантия результата</h3>
+                    <p className="text-foreground">Вернём 100% стоимости, если не совершите первую сделку за 60 дней</p>
+                  </div>
+                </div>
+                <Button 
+                  size="lg"
+                  className="bg-gold hover:bg-gold-light text-black font-semibold px-8 gold-glow shrink-0"
+                  onClick={() => document.getElementById('cta-form')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  Забронировать место
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
 
           <p className="text-center text-muted-foreground mt-8 text-lg">
             Детали и условия по запросу. Открыты бонусы за раннюю оплату.
