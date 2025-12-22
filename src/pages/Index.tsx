@@ -69,16 +69,19 @@ const Index = () => {
             </Badge>
             
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight">
-              <span className="text-gold-light">Хочешь узнать</span>
+              <span className="text-gold-light">Преврати</span>{' '}
+              <span className="text-white">коллекционирование</span>
               <br />
-              <span className="text-white">коллекционный мир</span>
-              <br />
-              <span className="text-gold">изнутри?</span>
+              <span className="text-gold">в доход</span>
             </h1>
+            
+            <p className="text-2xl sm:text-3xl text-gold-light max-w-4xl mx-auto leading-relaxed font-semibold">
+              Хочешь узнать коллекционный мир изнутри?
+            </p>
             
             <p className="text-xl sm:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
               Устал сомневаться в ценности предметов коллекционирования, своей коллекции и бояться сделать первую продажу? 
-              <span className="text-gold font-semibold"> Преврати коллекционирование в источник дохода</span> — 8 недель, 3+ целевые сделки в месяц и маржа 15–35%.
+              <span className="text-gold font-semibold"> 8 недель, 3+ целевые сделки в месяц и маржа 15–35%.</span>
             </p>
             
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
