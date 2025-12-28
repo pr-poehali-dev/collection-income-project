@@ -267,13 +267,24 @@ const SocialProofSection = ({ testimonials, formData, setFormData, handleSubmit,
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="text-center">
-                  <p className="text-4xl font-bold text-white">45 000 ₽</p>
-                  <p className="text-sm text-muted-foreground line-through">60 000 ₽</p>
+                  <p className="text-4xl font-bold text-white">7 000 ₽</p>
                 </div>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <Icon name="Check" className="text-gold mt-1 flex-shrink-0" size={18} />
-                    <span className="text-foreground">Онлайн-курс (8 недель)</span>
+                    <span className="text-foreground">Онлайн-курс (4 недели)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Icon name="Check" className="text-gold mt-1 flex-shrink-0" size={18} />
+                    <span className="text-foreground">Выбор тематики коллекционирования, с чего начать (темы, подтемы)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Icon name="Check" className="text-gold mt-1 flex-shrink-0" size={18} />
+                    <span className="text-foreground">Классификация по состоянию, ликвидности и редкости</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Icon name="Check" className="text-gold mt-1 flex-shrink-0" size={18} />
+                    <span className="text-foreground">Систематизация</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Icon name="Check" className="text-gold mt-1 flex-shrink-0" size={18} />
@@ -307,13 +318,16 @@ const SocialProofSection = ({ testimonials, formData, setFormData, handleSubmit,
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="text-center">
-                  <p className="text-4xl font-bold text-white">75 000 ₽</p>
-                  <p className="text-sm text-muted-foreground line-through">95 000 ₽</p>
+                  <p className="text-4xl font-bold text-white">15 000 ₽</p>
                 </div>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <Icon name="Check" className="text-gold mt-1 flex-shrink-0" size={18} />
                     <span className="text-foreground">Всё из тарифа «Базовый»</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Icon name="Check" className="text-gold mt-1 flex-shrink-0" size={18} />
+                    <span className="text-foreground">Монетизация хобби</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Icon name="Check" className="text-gold mt-1 flex-shrink-0" size={18} />
@@ -339,18 +353,25 @@ const SocialProofSection = ({ testimonials, formData, setFormData, handleSubmit,
 
             <Card className="bg-card border-border hover:border-gold transition-all duration-300">
               <CardHeader>
-                <CardTitle className="text-2xl text-gold-light">VIP</CardTitle>
+                <CardTitle className="text-2xl text-gold-light">Премиум</CardTitle>
                 <CardDescription>Максимальное сопровождение</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="text-center">
-                  <p className="text-4xl font-bold text-white">120 000 ₽</p>
-                  <p className="text-sm text-muted-foreground line-through">150 000 ₽</p>
+                  <p className="text-4xl font-bold text-white">50 000 ₽</p>
                 </div>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <Icon name="Check" className="text-gold mt-1 flex-shrink-0" size={18} />
                     <span className="text-foreground">Всё из тарифа «Стандарт»</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Icon name="Check" className="text-gold mt-1 flex-shrink-0" size={18} />
+                    <span className="text-foreground">Быстрая оценка материала (секреты, лайфхаки)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Icon name="Check" className="text-gold mt-1 flex-shrink-0" size={18} />
+                    <span className="text-foreground">Инвестирование (выбор предметов, оценка, мониторинг, анализ рынка)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Icon name="Check" className="text-gold mt-1 flex-shrink-0" size={18} />
@@ -440,7 +461,7 @@ const SocialProofSection = ({ testimonials, formData, setFormData, handleSubmit,
                 Я новичок в коллекционировании. Подойдёт ли мне курс?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Да! Курс специально разработан для новичков. Мы начинаем с базовых понятий и постепенно переходим к продвинутым техникам. Главное — желание учиться и практиковаться.
+                Для новичка подойдёт тариф Базовый, но сам курс предназначен для тех, кто обладает уже некоторым опытом, базовыми знаниями и прочим. Мы начинаем с базовых понятий и постепенно переходим к продвинутым техникам. Главное — желание учиться и практиковаться.
               </AccordionContent>
             </AccordionItem>
 
