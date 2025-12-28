@@ -259,7 +259,7 @@ const SocialProofSection = ({ testimonials, formData, setFormData, handleSubmit,
             <div className="w-24 h-1 bg-gold mx-auto"></div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             <Card className="bg-card border-border hover:border-gold transition-all duration-300">
               <CardHeader>
                 <CardTitle className="text-2xl text-gold-light">Базовый</CardTitle>
