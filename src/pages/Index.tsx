@@ -317,7 +317,7 @@ const Index = () => {
 
             <Card className="bg-card border-gold/50">
               <CardHeader>
-                <div className="text-5xl font-bold text-gold mb-2">15-35%</div>
+                <div className="text-5xl font-bold text-gold mb-2">15-45%</div>
                 <CardTitle className="text-white">маржа</CardTitle>
               </CardHeader>
               <CardContent>
