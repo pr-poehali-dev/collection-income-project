@@ -15,7 +15,7 @@ const AudienceSection = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             <Card className="bg-card border-border hover:border-gold transition-all duration-300 hover:gold-glow">
               <CardHeader>
                 <div className="w-12 h-12 bg-gold/20 rounded-lg flex items-center justify-center mb-4">
@@ -60,35 +60,35 @@ const AudienceSection = () => {
           </div>
 
           <Card className="bg-gradient-to-br from-gold/10 to-card border-gold">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-white mb-4 text-center">Главные мотивации</h3>
-              <div className="grid md:grid-cols-2 gap-6">
+            <CardContent className="p-6 sm:p-8">
+              <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 text-center">Для кого этот курс</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 <div className="flex items-start gap-3">
                   <Icon name="CheckCircle2" className="text-gold mt-1 flex-shrink-0" size={20} />
                   <div>
-                    <p className="text-gold font-semibold mb-1">Контроль и уверенность</p>
-                    <p className="text-muted-foreground text-sm">Четкие алгоритмы действий, понятные критерии оценки и риск-менеджмент</p>
+                    <p className="text-gold font-semibold mb-1">Коллекционеры-энтузиасты</p>
+                    <p className="text-muted-foreground text-sm">Хотят превратить хобби в стабильный источник дохода</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Icon name="CheckCircle2" className="text-gold mt-1 flex-shrink-0" size={20} />
                   <div>
-                    <p className="text-gold font-semibold mb-1">Экспертность</p>
-                    <p className="text-muted-foreground text-sm">Не просто продавать, а становиться признанным знатоком в своей нише</p>
+                    <p className="text-gold font-semibold mb-1">Монисты</p>
+                    <p className="text-muted-foreground text-sm">Ищут устойчивые источники дохода без больших вложений</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Icon name="CheckCircle2" className="text-gold mt-1 flex-shrink-0" size={20} />
                   <div>
-                    <p className="text-gold font-semibold mb-1">Финансовый результат</p>
-                    <p className="text-muted-foreground text-sm">Маржа 15-85%, 3+ сделки в месяц — конкретные цифры, не абстракция</p>
+                    <p className="text-gold font-semibold mb-1">Малые предприниматели</p>
+                    <p className="text-muted-foreground text-sm">Желают запустить онлайн-торговлю предметами коллекционирования</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Icon name="CheckCircle2" className="text-gold mt-1 flex-shrink-0" size={20} />
                   <div>
-                    <p className="text-gold font-semibold mb-1">Удовольствие от процесса</p>
-                    <p className="text-muted-foreground text-sm">Зарабатывать на любимом деле — это реально!</p>
+                    <p className="text-gold font-semibold mb-1">Инвесторы-альтернативщики</p>
+                    <p className="text-muted-foreground text-sm">Ищут понятные активы вне волатильности традиционных рынков</p>
                   </div>
                 </div>
               </div>
@@ -106,7 +106,7 @@ const AudienceSection = () => {
             <p className="text-xl text-gold-light font-semibold">Монетизация коллекционирования — от хобби к стабильному доходу</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card className="bg-card border-border hover:border-gold transition-all duration-300 hover:gold-glow">
               <CardHeader>
                 <Icon name="TrendingUp" className="text-gold mb-2" size={32} />
