@@ -45,9 +45,14 @@ const SocialProofSection = ({ testimonials, formData, setFormData, handleSubmit,
             <p className="text-xl text-muted-foreground">Реальные результаты наших выпускников</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="bg-card border-border hover:border-gold transition-all duration-300">
+              <Card 
+                key={index} 
+                className={`bg-card border-border hover:border-gold transition-all duration-300 ${
+                  index >= 6 ? 'md:col-span-2 lg:col-span-1 lg:col-start-2' : ''
+                }`}
+              >
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4 mb-4">
                     <Avatar className="w-12 h-12 border-2 border-gold">
