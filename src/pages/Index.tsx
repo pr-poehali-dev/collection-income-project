@@ -3,10 +3,13 @@ import HeroSection from '@/components/sections/HeroSection';
 import AudienceSection from '@/components/sections/AudienceSection';
 import ProgramSection from '@/components/sections/ProgramSection';
 import SocialProofSection from '@/components/sections/SocialProofSection';
+import { Button } from '@/components/ui/button';
+import Icon from '@/components/ui/icon';
 
 const Index = () => {
   const [formData, setFormData] = useState({ name: '', phone: '', message: '' });
   const [timeLeft, setTimeLeft] = useState({ days: 2, hours: 14, minutes: 30, seconds: 0 });
+  const [showStickyButton, setShowStickyButton] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -19,6 +22,14 @@ const Index = () => {
       });
     }, 1000);
     return () => clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowStickyButton(window.scrollY > 800);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -79,6 +90,10 @@ const Index = () => {
     }
   ];
 
+  const scrollToForm = () => {
+    document.getElementById('cta-form')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-foreground overflow-x-hidden">
       <HeroSection timeLeft={timeLeft} />
@@ -91,6 +106,19 @@ const Index = () => {
         handleSubmit={handleSubmit}
         timeLeft={timeLeft}
       />
+
+      {showStickyButton && (
+        <div className="fixed bottom-6 right-6 z-50 animate-in slide-in-from-bottom-4 fade-in duration-300">
+          <Button
+            onClick={scrollToForm}
+            className="bg-gold hover:bg-gold-light text-black font-bold text-lg px-8 py-6 rounded-full shadow-2xl gold-glow-strong hover:scale-105 transition-all duration-300 flex items-center gap-3"
+          >
+            <Icon name="Rocket" size={24} />
+            <span className="hidden sm:inline">Записаться на курс</span>
+            <span className="sm:hidden">Записаться</span>
+          </Button>
+        </div>
+      )}
     </div>
   );
 };
