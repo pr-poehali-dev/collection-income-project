@@ -114,46 +114,93 @@ const Index = () => {
       {/* Target Audience */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-card/30">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Кому мы помогаем</h2>
-            <div className="w-24 h-1 bg-gold mx-auto"></div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <Card className="bg-card border-border hover:border-gold transition-all duration-300 hover:gold-glow">
-              <CardHeader>
-                <div className="w-12 h-12 bg-gold/20 rounded-lg flex items-center justify-center mb-4">
-                  <Icon name="TrendingUp" className="text-gold" size={24} />
-                </div>
-                <CardTitle className="text-2xl text-gold-light">Неопытным коллекционерам</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-lg">
-                  Энтузиастам, которым хочется быстро выйти на первые деньги безопасно
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-card border-border hover:border-gold transition-all duration-300 hover:gold-glow">
-              <CardHeader>
-                <div className="w-12 h-12 bg-gold/20 rounded-lg flex items-center justify-center mb-4">
-                  <Icon name="Search" className="text-gold" size={24} />
-                </div>
-                <CardTitle className="text-2xl text-gold-light">Тем, кто хочет понять ценность</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-lg">
-                  Отличать оригинал от копии и торговать на реальных площадках
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="mt-8 text-center">
-            <p className="text-xl text-gold font-semibold">
-              Ключевая выгода: системный подход, понятные чек-листы и дорожная карта к первым сделкам
+            <div className="w-24 h-1 bg-gold mx-auto mb-4"></div>
+            <p className="text-xl text-gold-light max-w-4xl mx-auto">
+              Энергичные, любознательные коллекционеры <span className="text-gold font-semibold">20–45 лет</span>, которые хотят превратить хобби в устойчивый источник дохода и одновременно повысить финансовую безопасность
             </p>
           </div>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <Card className="bg-card border-border hover:border-gold transition-all duration-300 hover:gold-glow">
+              <CardHeader>
+                <div className="w-12 h-12 bg-gold/20 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="Shield" className="text-gold" size={24} />
+                </div>
+                <CardTitle className="text-xl text-gold-light">Финансовая безопасность</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Тебе нужна «подушка безопасности» вне волатильности традиционных инвестиций — контролируемый, понятный актив
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-border hover:border-gold transition-all duration-300 hover:gold-glow">
+              <CardHeader>
+                <div className="w-12 h-12 bg-gold/20 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="DollarSign" className="text-gold" size={24} />
+                </div>
+                <CardTitle className="text-xl text-gold-light">Дополнительный доход</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Систематический подход к покупке/продаже с понятными цифрами ROI, без рисков и потерь
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-border hover:border-gold transition-all duration-300 hover:gold-glow">
+              <CardHeader>
+                <div className="w-12 h-12 bg-gold/20 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="Star" className="text-gold" size={24} />
+                </div>
+                <CardTitle className="text-xl text-gold-light">Самореализация</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Превращение увлечения в экспертное положение, повышение статуса знатока и удовольствие от процесса
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <Card className="bg-gradient-to-br from-gold/10 to-card border-gold">
+            <CardContent className="p-8">
+              <h3 className="text-2xl font-bold text-white mb-4 text-center">Главные мотивации</h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="flex items-start gap-3">
+                  <Icon name="CheckCircle2" className="text-gold mt-1 flex-shrink-0" size={20} />
+                  <div>
+                    <p className="text-gold font-semibold mb-1">Контроль и уверенность</p>
+                    <p className="text-muted-foreground text-sm">Четкие алгоритмы действий, понятные критерии оценки и риск-менеджмент</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="CheckCircle2" className="text-gold mt-1 flex-shrink-0" size={20} />
+                  <div>
+                    <p className="text-gold font-semibold mb-1">Диверсификация активов</p>
+                    <p className="text-muted-foreground text-sm">Альтернатива акциям и крипте — материальные активы с историей и культурной ценностью</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="CheckCircle2" className="text-gold mt-1 flex-shrink-0" size={20} />
+                  <div>
+                    <p className="text-gold font-semibold mb-1">Инсайдерская информация</p>
+                    <p className="text-muted-foreground text-sm">Доступ к «секретам» и «фишкам», которые недоступны новичкам</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="CheckCircle2" className="text-gold mt-1 flex-shrink-0" size={20} />
+                  <div>
+                    <p className="text-gold font-semibold mb-1">Баланс удовольствия и выгоды</p>
+                    <p className="text-muted-foreground text-sm">Наслаждение от предмета + реальная прибыль от сделки</p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
@@ -311,17 +358,20 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Как придём к результату</h2>
             <div className="w-24 h-1 bg-gold mx-auto mb-4"></div>
-            <p className="text-xl text-muted-foreground">Пошаговая карта за 6 шагов</p>
+            <p className="text-xl text-gold-light font-semibold">Система из 9 этапов для превращения хобби в стабильный доход</p>
           </div>
 
           <div className="space-y-6">
             {[
-              { step: 1, title: 'Диагностика опыта', desc: 'Базовые знания в нише (30 мин.)', icon: 'Clipboard' },
-              { step: 2, title: 'Анализ аудитории', desc: 'Платежеспособная аудитория, конкуренты и ценность материала', icon: 'Users' },
-              { step: 3, title: 'Создание площадок', desc: 'Торговые площадки, формат, описание', icon: 'Store' },
-              { step: 4, title: 'План внедрения', desc: 'Чек-листы, каналы и форматы', icon: 'FileText' },
-              { step: 5, title: 'Практика', desc: 'Корректировка лотов, секреты, фишки внутри', icon: 'Target' },
-              { step: 6, title: 'Масштабирование', desc: 'Автоматизация повторяемых операций и расширение ассортимента', icon: 'Rocket' }
+              { step: 1, title: 'Финансовая диагностика и целеполагание', desc: 'Определяем твой текущий уровень, желаемый доход и финансовые цели. Строим индивидуальную дорожную карту с конкретными цифрами ROI.', icon: 'Target' },
+              { step: 2, title: 'Выбор прибыльной ниши', desc: 'Анализируем категории коллекционных предметов по критериям ликвидности, маржинальности (15-35%) и барьерам входа. Находим твою «голубую зону».', icon: 'Search' },
+              { step: 3, title: 'Система оценки и экспертизы', desc: 'Чек-листы подлинности, методики оценки рыночной стоимости, весовые коэффициенты для быстрого анализа. Учишься видеть ценность за секунды.', icon: 'ShieldCheck' },
+              { step: 4, title: 'Стратегия закупок', desc: 'Где искать недооцененные лоты, как вести переговоры, формулы расчета максимальной цены покупки. Риск-менеджмент: стоп-лосс и лимиты портфеля.', icon: 'ShoppingCart' },
+              { step: 5, title: 'Позиционирование и площадки', desc: 'Выбираем торговые платформы под твою аудиторию (20-45 лет, средний чек). Создаем продающие описания и визуал, который конвертирует в продажу.', icon: 'Store' },
+              { step: 6, title: 'Воронка продаж и маркетинг', desc: 'Алгоритмы привлечения целевых покупателей: онлайн-магазины, соцсети, профильные сообщества. Скрипты общения и закрытие сделок.', icon: 'TrendingUp' },
+              { step: 7, title: 'Первые 3 сделки под контролем', desc: 'Практикуешься на реальных лотах с моей поддержкой: от выбора предмета до получения денег. Разбираем ошибки и корректируем стратегию.', icon: 'CheckCircle2' },
+              { step: 8, title: 'Построение портфеля активов', desc: 'Диверсификация: баланс между быстроликвидными лотами (оборот 1-2 недели) и редкими предметами (маржа 30-50%). Формируешь свою «подушку безопасности».', icon: 'Wallet' },
+              { step: 9, title: 'Масштабирование и автоматизация', desc: 'Систематизация процессов: шаблоны, чек-листы, CRM для учета. Расширение ассортимента и переход на 5+ сделок в месяц. Превращение в стабильный бизнес.', icon: 'Rocket' }
             ].map((item, index) => (
               <Card key={index} className="bg-card border-border hover:border-gold transition-all duration-300 hover:gold-glow">
                 <CardContent className="p-6">
@@ -403,29 +453,45 @@ const Index = () => {
             <CardContent className="p-8 sm:p-12">
               <div className="text-center mb-8">
                 <h3 className="text-3xl sm:text-4xl font-bold text-gold-light mb-2">Виталий Мельник</h3>
-                <p className="text-xl text-muted-foreground">Коуч и наставник новичков в коллекционировании</p>
+                <p className="text-xl text-gold mb-3">Коуч и наставник новичков и коллекционеров с малым опытом</p>
+                <p className="text-lg text-muted-foreground">Помогаю превратить хобби в устойчивый источник дохода через систему контролируемых, понятных и проверяемых стратегий</p>
               </div>
 
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-gold mb-2">10+</div>
-                  <p className="text-muted-foreground">лет практики в индустрии</p>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-gold mb-2">15+</div>
-                  <p className="text-muted-foreground">аукционных домов РФ и Израиля</p>
-                </div>
-                <div className="text-center">
-                  <Icon name="Award" className="text-gold mx-auto mb-3" size={48} />
-                  <p className="text-muted-foreground">Участие в проекте Московского монетного двора</p>
-                </div>
-                <div className="text-center">
-                  <Icon name="Trophy" className="text-gold mx-auto mb-3" size={48} />
-                  <p className="text-muted-foreground">Благодарности от крупных медийных проектов</p>
+              <div className="mb-8">
+                <h4 className="text-2xl font-bold text-white mb-4 text-center">Регалии и опыт</h4>
+                <div className="grid sm:grid-cols-2 gap-6">
+                  <div className="flex items-start gap-4">
+                    <Icon name="Briefcase" className="text-gold mt-1 flex-shrink-0" size={24} />
+                    <div>
+                      <p className="text-gold font-semibold">10 лет практики в индустрии</p>
+                      <p className="text-muted-foreground text-sm">Системный опыт в коллекционировании и монетизации</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <Icon name="Award" className="text-gold mt-1 flex-shrink-0" size={24} />
+                    <div>
+                      <p className="text-gold font-semibold">Участие в проекте Московского монетного двора</p>
+                      <p className="text-muted-foreground text-sm">Проект «Символика ММД»</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <Icon name="Trophy" className="text-gold mt-1 flex-shrink-0" size={24} />
+                    <div>
+                      <p className="text-gold font-semibold">Благодарности от крупных медийных проектов</p>
+                      <p className="text-muted-foreground text-sm">Признание экспертизы в профессиональном сообществе</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <Icon name="Handshake" className="text-gold mt-1 flex-shrink-0" size={24} />
+                    <div>
+                      <p className="text-gold font-semibold">Партнерство с 15+ аукционными домами</p>
+                      <p className="text-muted-foreground text-sm">РФ и Израиля — доступ к инсайдерской информации</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div className="mt-8 pt-8 border-t border-border">
+              <div className="pt-6 border-t border-border">
                 <p className="text-lg text-center text-foreground">
                   <span className="text-gold font-semibold">Каналы продаж:</span> онлайн-магазины, YouTube, группы в соцсетях
                 </p>
@@ -455,7 +521,10 @@ const Index = () => {
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="flex items-start gap-3">
                   <Icon name="Search" className="text-gold mt-1 flex-shrink-0" size={20} />
-                  <span className="text-foreground">Поиск лотов, коллекционных предметов</span>
+                  <div>
+                    <span className="text-foreground font-semibold">Поиск лотов, коллекционных предметов</span>
+                    <p className="text-muted-foreground text-sm mt-1">Где искать недооцененные лоты с потенциалом роста</p>
+                  </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Icon name="ShieldCheck" className="text-gold mt-1 flex-shrink-0" size={20} />
@@ -480,8 +549,11 @@ const Index = () => {
               </div>
 
               <div className="mt-8 p-6 bg-gold/10 border border-gold rounded-lg">
-                <p className="text-lg text-center text-gold-light font-semibold">
+                <p className="text-lg text-center text-gold-light font-semibold mb-4">
                   Результат: первый поток реальных сделок, систематизация бизнеса и уверенность в сделках
+                </p>
+                <p className="text-base text-center text-muted-foreground">
+                  <span className="text-gold font-semibold">Альтернативный взгляд на инвестиции:</span> коллекционные предметы как контролируемый, понятный и проверяемый актив — твоя «финансовая подушка» вне волатильности традиционных рынков
                 </p>
               </div>
             </CardContent>
