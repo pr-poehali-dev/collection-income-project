@@ -161,7 +161,7 @@ const Index = () => {
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Проблемы и решения</h2>
+            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Что тебя ждёт</h2>
             <div className="w-24 h-1 bg-gold mx-auto"></div>
           </div>
 
@@ -171,19 +171,19 @@ const Index = () => {
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <div className="flex-1">
                     <div className="flex items-start gap-4 mb-4">
-                      <Icon name="XCircle" className="text-destructive mt-1" size={24} />
+                      <Icon name="AlertCircle" className="text-muted-foreground mt-1" size={24} />
                       <div>
-                        <h3 className="text-xl font-semibold text-white mb-2">Проблема</h3>
+                        <h3 className="text-xl font-semibold text-white mb-2">Сейчас</h3>
                         <p className="text-muted-foreground">Нет первых клиентов и ясности по ценности лота</p>
                       </div>
                     </div>
                   </div>
                   <div className="flex-1">
                     <div className="flex items-start gap-4">
-                      <Icon name="CheckCircle2" className="text-gold mt-1" size={24} />
+                      <Icon name="Sparkles" className="text-gold mt-1" size={24} />
                       <div>
-                        <h3 className="text-xl font-semibold text-gold mb-2">Решение</h3>
-                        <p className="text-foreground">8-недельная программа с дорожной картой и инструментами оценки</p>
+                        <h3 className="text-xl font-semibold text-gold mb-2">После обучения</h3>
+                        <p className="text-foreground">Дорожная карта к первым сделкам: как искать интересные лоты, оценивать и выходить на целевую аудиторию безопасно</p>
                       </div>
                     </div>
                   </div>
@@ -196,19 +196,19 @@ const Index = () => {
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <div className="flex-1">
                     <div className="flex items-start gap-4 mb-4">
-                      <Icon name="XCircle" className="text-destructive mt-1" size={24} />
+                      <Icon name="AlertCircle" className="text-muted-foreground mt-1" size={24} />
                       <div>
-                        <h3 className="text-xl font-semibold text-white mb-2">Проблема</h3>
-                        <p className="text-muted-foreground">Сложно отличать подлинность от подделки</p>
+                        <h3 className="text-xl font-semibold text-white mb-2">Сейчас</h3>
+                        <p className="text-muted-foreground">Риск купить подделку или переплатить в 2–3 раза</p>
                       </div>
                     </div>
                   </div>
                   <div className="flex-1">
                     <div className="flex items-start gap-4">
-                      <Icon name="CheckCircle2" className="text-gold mt-1" size={24} />
+                      <Icon name="Sparkles" className="text-gold mt-1" size={24} />
                       <div>
-                        <h3 className="text-xl font-semibold text-gold mb-2">Решение</h3>
-                        <p className="text-foreground">Чек-листы проверки подлинности и сравнение аналогов</p>
+                        <h3 className="text-xl font-semibold text-gold mb-2">После обучения</h3>
+                        <p className="text-foreground">Чек-листы подлинности, навыки оценки рыночной стоимости и критерии качественных лотов</p>
                       </div>
                     </div>
                   </div>
@@ -221,19 +221,19 @@ const Index = () => {
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <div className="flex-1">
                     <div className="flex items-start gap-4 mb-4">
-                      <Icon name="XCircle" className="text-destructive mt-1" size={24} />
+                      <Icon name="AlertCircle" className="text-muted-foreground mt-1" size={24} />
                       <div>
-                        <h3 className="text-xl font-semibold text-white mb-2">Проблема</h3>
-                        <p className="text-muted-foreground">Нет конкретной методики монетизации</p>
+                        <h3 className="text-xl font-semibold text-white mb-2">Сейчас</h3>
+                        <p className="text-muted-foreground">Не хватает знаний для уверенного старта и системного подхода</p>
                       </div>
                     </div>
                   </div>
                   <div className="flex-1">
                     <div className="flex items-start gap-4">
-                      <Icon name="CheckCircle2" className="text-gold mt-1" size={24} />
+                      <Icon name="Sparkles" className="text-gold mt-1" size={24} />
                       <div>
-                        <h3 className="text-xl font-semibold text-gold mb-2">Решение</h3>
-                        <p className="text-foreground">Пошаговая система монетизации коллекционных предметов</p>
+                        <h3 className="text-xl font-semibold text-gold mb-2">После обучения</h3>
+                        <p className="text-foreground">Полная база и пошаговая программа: от выбора категории и нюансов подлинности до юридических аспектов и маркетинга</p>
                       </div>
                     </div>
                   </div>
