@@ -65,20 +65,18 @@ const Index = () => {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center space-y-8 animate-fade-in">
             <Badge className="bg-primary/20 text-gold border-gold px-6 py-2 text-sm font-medium">
-              8 НЕДЕЛЬ • 3+ СДЕЛКИ В МЕСЯЦ • МАРЖА 15-85%
+              8 НЕДЕЛЬ • 3+ СДЕЛКИ В МЕСЯЦ • МАРЖА 15-45%
             </Badge>
             
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight">
-              <span className="text-gold-light">Устал сомневаться в ценности</span>{' '}
-              <span className="text-white">предметов коллекционирования,</span>
+              <span className="text-gold-light">Преврати</span>{' '}
+              <span className="text-white">коллекционирование</span>
               <br />
-              <span className="text-gold">своей коллекции и бояться</span>
-              <br />
-              <span className="text-white">сделать первую продажу?</span>
+              <span className="text-gold">в источник дохода</span>
             </h1>
             
-            <p className="text-xl sm:text-2xl text-gold-light max-w-4xl mx-auto leading-relaxed font-semibold">
-              8 недель, 3+ целевые сделки в месяц и маржа 15–85%.
+            <p className="text-xl sm:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              Устал сомневаться в ценности предметов коллекционирования, своей коллекции и бояться сделать первую продажу? <span className="text-gold-light font-semibold">8 недель, 3+ целевые сделки в месяц и маржа 15–85%.</span>
             </p>
             
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
