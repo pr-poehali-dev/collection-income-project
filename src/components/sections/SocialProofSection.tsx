@@ -101,7 +101,7 @@ const SocialProofSection = ({ testimonials, formData, setFormData, handleSubmit,
               <div className="text-center mb-8">
                 <h3 className="text-3xl sm:text-4xl font-bold text-gold-light mb-2">Виталий Мельник</h3>
                 <p className="text-xl text-gold mb-3">Коллекционный дилер и коуч</p>
-                <p className="text-lg text-muted-foreground">Помогаю новичкам и энтузиастам в нумизматике и смежных категориях быстро и безопасно выйти на первые деньги: понимать ценность, отличать оригинал от копии, торговать на реальных площадках.</p>
+                <p className="text-lg text-muted-foreground">Помогаю неопытным коллекционерам и энтузиастам в распространённых темах коллекционирования быстро и безопасно выйти на первые деньги: понимать ценность, отличать оригинал от копии, торговать на реальных площадках.</p>
               </div>
 
               <div className="pt-6 border-t border-border">
