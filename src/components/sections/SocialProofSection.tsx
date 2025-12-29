@@ -100,13 +100,64 @@ const SocialProofSection = ({ testimonials, formData, setFormData, handleSubmit,
             <CardContent className="p-8 sm:p-12">
               <div className="text-center mb-8">
                 <h3 className="text-3xl sm:text-4xl font-bold text-gold-light mb-2">Виталий Мельник</h3>
-                <p className="text-xl text-gold mb-3">Коллекционный дилер и коуч</p>
-                <p className="text-lg text-muted-foreground">Помогаю неопытным коллекционерам и энтузиастам в распространённых темах коллекционирования быстро и безопасно выйти на первые деньги: понимать ценность, отличать оригинал от копии, торговать на реальных площадках.</p>
+                <p className="text-xl text-gold mb-3">Коллекционный дилер, наставник новичков и коллекционеров с малым опытом</p>
+                <p className="text-lg text-muted-foreground">Помогаю превратить хобби в устойчивый источник дохода через систему контролируемых, понятных и проверяемых стратегий</p>
+              </div>
+
+              <div className="mb-8">
+                <h4 className="text-2xl font-bold text-white mb-4 text-center">Регалии и опыт</h4>
+                <div className="grid sm:grid-cols-2 gap-6">
+                  <div className="flex items-start gap-4">
+                    <Icon name="Briefcase" className="text-gold mt-1 flex-shrink-0" size={24} />
+                    <div>
+                      <p className="text-gold font-semibold">10 лет практики в индустрии</p>
+                      <p className="text-muted-foreground text-sm">Системный опыт в коллекционировании и монетизации</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <Icon name="Award" className="text-gold mt-1 flex-shrink-0" size={24} />
+                    <div>
+                      <p className="text-gold font-semibold">Участие в проекте Московского монетного двора</p>
+                      <p className="text-muted-foreground text-sm">Проект «Символика ММД»</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <Icon name="Medal" className="text-gold mt-1 flex-shrink-0" size={24} />
+                    <div>
+                      <p className="text-gold font-semibold">Принимал участие в создании</p>
+                      <p className="text-muted-foreground text-sm">Официального символического жетона "Второй Сталинград"</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <Icon name="Trophy" className="text-gold mt-1 flex-shrink-0" size={24} />
+                    <div>
+                      <p className="text-gold font-semibold">Благодарности от крупных медийных проектов</p>
+                      <p className="text-muted-foreground text-sm">Признание экспертизы в профессиональном сообществе</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <Icon name="ThumbsUp" className="text-gold mt-1 flex-shrink-0" size={24} />
+                    <div>
+                      <p className="text-gold font-semibold">Более 1000 положительных отзывов</p>
+                      <p className="text-muted-foreground text-sm">О проведённых сделках</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <Icon name="Handshake" className="text-gold mt-1 flex-shrink-0" size={24} />
+                    <div>
+                      <p className="text-gold font-semibold">Партнерство с 15+ аукционными домами</p>
+                      <p className="text-muted-foreground text-sm">РФ и Израиля — доступ к инсайдерской информации</p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div className="pt-6 border-t border-border">
-                <p className="text-lg text-center text-foreground italic">
-                  "Моя система – это не просто набор знаний, это путь, который превращает увлечение в стабильный и разумный доход без лишних рисков."
+                <p className="text-lg text-center text-foreground">
+                  <span className="text-gold font-semibold">Каналы продаж:</span> Более 3-х торговых точек онлайн
+                </p>
+                <p className="text-lg text-center text-foreground mt-2">
+                  <span className="text-gold font-semibold">YouTube канал:</span> "Make in collection" — о коллекционировании
                 </p>
               </div>
             </CardContent>
@@ -450,10 +501,10 @@ const SocialProofSection = ({ testimonials, formData, setFormData, handleSubmit,
           <Card className="bg-gradient-to-br from-card to-card/50 border-gold gold-glow-strong">
             <CardHeader className="text-center">
               <CardTitle className="text-3xl sm:text-4xl font-bold text-gold-light mb-2">
-                Хочешь монетизировать хобби без хаоса и переплат?
+                Запишись на вводную консультацию
               </CardTitle>
               <CardDescription className="text-lg text-muted-foreground">
-                Напиши «ХОЧУ» или оставь контакты — свяжемся в ближайшее время
+                Не откладывай: конкретные шаги к доходу в коллекционировании уже сегодня
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -496,7 +547,7 @@ const SocialProofSection = ({ testimonials, formData, setFormData, handleSubmit,
                   className="w-full bg-gold hover:bg-gold-light text-black font-semibold text-lg py-6 gold-glow hover:gold-glow-strong transition-all"
                 >
                   <Icon name="Send" className="mr-2" size={20} />
-                  ХОЧУ
+                  ОТПРАВИТЬ ЗАЯВКУ
                 </Button>
 
                 <p className="text-sm text-center text-muted-foreground">

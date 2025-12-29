@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import HeroSection from '@/components/sections/HeroSection';
 import AudienceSection from '@/components/sections/AudienceSection';
-import MethodSection from '@/components/sections/MethodSection';
-import TrustSection from '@/components/sections/TrustSection';
 import ProgramSection from '@/components/sections/ProgramSection';
 import SocialProofSection from '@/components/sections/SocialProofSection';
 import { Button } from '@/components/ui/button';
@@ -99,8 +97,6 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-foreground overflow-x-hidden">
       <HeroSection timeLeft={timeLeft} />
-      <MethodSection />
-      <TrustSection />
       <AudienceSection />
       <ProgramSection />
       <SocialProofSection 
