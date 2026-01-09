@@ -184,6 +184,13 @@ const SocialProofSection = ({ testimonials, formData, setFormData, handleSubmit,
             <CardContent>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="flex items-start gap-3">
+                  <Icon name="BookOpen" className="text-gold mt-1 flex-shrink-0" size={20} />
+                  <div>
+                    <span className="text-foreground font-semibold">Базовые знания</span>
+                    <p className="text-muted-foreground text-sm mt-1">Находим твою нишу</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
                   <Icon name="Search" className="text-gold mt-1 flex-shrink-0" size={20} />
                   <div>
                     <span className="text-foreground font-semibold">Поиск лотов, коллекционных предметов</span>
