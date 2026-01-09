@@ -132,7 +132,7 @@ const SocialProofSection = ({ testimonials, formData, setFormData, handleSubmit,
                     <Icon name="Trophy" className="text-gold mt-1 flex-shrink-0" size={24} />
                     <div>
                       <p className="text-gold font-semibold">Благодарности от крупных медийных проектов</p>
-                      <p className="text-muted-foreground text-sm">Признание экспертизы в профессиональном сообществе</p>
+                      <p className="text-muted-foreground text-sm">За вклад в освещении и продвижении проекта "Символика ММД" и творческих инициатив в других проектах</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
