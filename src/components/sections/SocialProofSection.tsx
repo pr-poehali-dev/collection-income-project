@@ -430,7 +430,7 @@ const SocialProofSection = ({ testimonials, formData, setFormData, handleSubmit,
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { icon: 'Gift', title: '2 персональные консультации', desc: 'По выбору первых 5 лотов и их оценке' },
-              { icon: 'FileText', title: 'Шаблон описания лота', desc: 'Под разные категории нумизматики' },
+              { icon: 'FileText', title: 'Шаблон описания лота', desc: 'Под разные категории коллекционных предметов (можно индивидуально)' },
               { icon: 'Package', title: 'Гайд по логистике', desc: 'Безопасная упаковка и доставка' },
               { icon: 'MessageCircle', title: 'Закрытый чат Q&A', desc: 'Доступ на 90 дней' },
               { icon: 'Zap', title: 'Чек-лист подлинности', desc: 'Быстрая проверка за 5 минут' }
