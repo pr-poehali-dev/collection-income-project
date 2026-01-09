@@ -187,7 +187,7 @@ const SocialProofSection = ({ testimonials, formData, setFormData, handleSubmit,
                   <Icon name="BookOpen" className="text-gold mt-1 flex-shrink-0" size={20} />
                   <div>
                     <span className="text-foreground font-semibold">Базовые знания</span>
-                    <p className="text-muted-foreground text-sm mt-1">Находим твою нишу</p>
+                    <p className="text-muted-foreground text-sm mt-1">Находим твою нишу (для новичков-энтузиастов)</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
