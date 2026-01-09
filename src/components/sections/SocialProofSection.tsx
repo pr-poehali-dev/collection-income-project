@@ -210,6 +210,10 @@ const SocialProofSection = ({ testimonials, formData, setFormData, handleSubmit,
                   <span className="text-foreground">Продажа и логистика.</span>
                 </div>
                 <div className="flex items-start gap-3">
+                  <Icon name="Map" className="text-gold mt-1 flex-shrink-0" size={20} />
+                  <span className="text-foreground">Дорожная карта с инструментами оценки.</span>
+                </div>
+                <div className="flex items-start gap-3">
                   <Icon name="TrendingUp" className="text-gold mt-1 flex-shrink-0" size={20} />
                   <span className="text-foreground">Анализ рынка.</span>
                 </div>
