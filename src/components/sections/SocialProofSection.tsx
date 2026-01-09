@@ -186,36 +186,36 @@ const SocialProofSection = ({ testimonials, formData, setFormData, handleSubmit,
                 <div className="flex items-start gap-3">
                   <Icon name="BookOpen" className="text-gold mt-1 flex-shrink-0" size={20} />
                   <div>
-                    <span className="text-foreground font-semibold">Базовые знания</span>
-                    <p className="text-muted-foreground text-sm mt-1">Находим твою нишу (для новичков-энтузиастов)</p>
+                    <span className="text-foreground font-semibold">Базовые знания.</span>
+                    <p className="text-muted-foreground text-sm mt-1">Находим твою нишу (для новичков-энтузиастов).</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Icon name="Search" className="text-gold mt-1 flex-shrink-0" size={20} />
                   <div>
-                    <span className="text-foreground font-semibold">Поиск лотов, коллекционных предметов</span>
-                    <p className="text-muted-foreground text-sm mt-1">Где искать недооцененные лоты с потенциалом роста</p>
+                    <span className="text-foreground font-semibold">Поиск лотов, коллекционных предметов.</span>
+                    <p className="text-muted-foreground text-sm mt-1">Где искать недооцененные лоты с потенциалом роста.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Icon name="ShieldCheck" className="text-gold mt-1 flex-shrink-0" size={20} />
-                  <span className="text-foreground">Проверка подлинности, периода</span>
+                  <span className="text-foreground">Проверка подлинности, периода.</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Icon name="DollarSign" className="text-gold mt-1 flex-shrink-0" size={20} />
-                  <span className="text-foreground">Оценка и формирование цены</span>
+                  <span className="text-foreground">Оценка и формирование цены.</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Icon name="Package" className="text-gold mt-1 flex-shrink-0" size={20} />
-                  <span className="text-foreground">Продажа и логистика</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Icon name="Map" className="text-gold mt-1 flex-shrink-0" size={20} />
-                  <span className="text-foreground">Дорожная карта с инструментами оценки</span>
+                  <span className="text-foreground">Продажа и логистика.</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Icon name="TrendingUp" className="text-gold mt-1 flex-shrink-0" size={20} />
-                  <span className="text-foreground">Анализ рынка</span>
+                  <span className="text-foreground">Анализ рынка.</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="Wallet" className="text-gold mt-1 flex-shrink-0" size={20} />
+                  <span className="text-foreground">Альтернативное инвестирование. Твои деньги всегда рядом.</span>
                 </div>
               </div>
 
